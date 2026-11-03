@@ -116,7 +116,7 @@ just pdf
 
 ## 全书路线图
 
-第 2～6 章各做一门独立的小语言。从第 7 章到第 24 章，我们才是在同一个 Fun 编译器上逐步加功能。下面每一行写的都是读完那章能做出什么。第一、二部分的章节链接打开中文译文，第三部分的链接打开英文原书。
+第 2～6 章各做一门独立的小语言。从第 7 章到第 24 章，我们才是在同一个 Fun 编译器上逐步加功能。下面每一行写的都是读完那章能做出什么。点击章名即可打开对应的中文译文。
 
 ### 第一部分　基础
 
@@ -149,14 +149,14 @@ just pdf
 
 | 章 | 主题 | 动手实现 |
 | ---: | --- | --- |
-| 18 | [A-正规形与汇合点](https://sdiehl.github.io/write-you-a-haskell/ch18-anf.html) | 擦除类型，转换到 A-正规形（ANF），写一个小型简化器和一个能迭代执行的参考解释器。 |
-| 19 | [闭包转换](https://sdiehl.github.io/write-you-a-haskell/ch19-closures.html) | 显式记录闭包环境，提升函数，支持部分应用，并为 Flat IR 编写参考解释器。 |
-| 20 | [数据表示与运行时](https://sdiehl.github.io/write-you-a-haskell/ch20-runtime.html) | 实现带标签的机器字、堆对象布局、eval/apply 协议与共用的原语，并用 Boehm 管理运行时的垃圾回收。 |
-| 21 | [LLVM 代码生成](https://sdiehl.github.io/write-you-a-haskell/ch21-llvm.html) | 生成本机目标文件，完成链接和尾调用，再跟解释器对照测试。 |
-| 22 | [JIT 与交互式命令行](https://sdiehl.github.io/write-you-a-haskell/ch22-jit.html) | 通过 LLVM 即时执行代码，做一个能保留会话状态、查看类型、种类与各阶段输出的 REPL。 |
-| 23 | [优化](https://sdiehl.github.io/write-you-a-haskell/ch23-optimization.html) | 优化时避免重复原有工作，分析哪些全局定义可达，并用本机表示保存数值中间结果。 |
-| 24 | [精确垃圾回收（选读）](https://sdiehl.github.io/write-you-a-haskell/ch24-garbage-collection.html) | 追踪仍然存活的根，维护影子栈，做一个经压力测试的复制式回收器。 |
-| 25 | [后续方向](https://sdiehl.github.io/write-you-a-haskell/ch25-future-work.html) | 探索怎样扩展惰性求值、模块、更丰富的类型系统、优化和调试。 |
+| 18 | [A-正规形与汇合点](../part-3/ch18-anf.md) | 擦除类型，转换到 A-正规形（ANF），写一个小型简化器和一个能迭代执行的参考解释器。 |
+| 19 | [闭包转换](../part-3/ch19-closures.md) | 显式记录闭包环境，提升函数，支持部分应用，并为 Flat IR 编写参考解释器。 |
+| 20 | [数据表示与运行时](../part-3/ch20-runtime.md) | 实现带标签的机器字、堆对象布局、eval/apply 协议与共用的原语，并用 Boehm 管理运行时的垃圾回收。 |
+| 21 | [用 LLVM 生成机器码](../part-3/ch21-llvm.md) | 生成本机目标文件，完成链接和尾调用，再跟解释器对照测试。 |
+| 22 | [JIT 与交互式 REPL](../part-3/ch22-jit.md) | 通过 LLVM 即时执行代码，做一个能保留会话状态、查看类型、种类与各阶段输出的 REPL。 |
+| 23 | [优化](../part-3/ch23-optimization.md) | 优化时避免重复原有工作，分析哪些全局定义可达，并用本机表示保存数值中间结果。 |
+| 24 | [精确垃圾回收（选读）](../part-3/ch24-garbage-collection.md) | 追踪仍然存活的根，维护影子栈，做一个经压力测试的复制式回收器。 |
+| 25 | [接下来可以做什么](../part-3/ch25-future-work.md) | 探索怎样扩展惰性求值、模块、更丰富的类型系统、优化和调试。 |
 
 附录集中列出文法、类型规则、中间表示、运行时 ABI 和诊断索引，书末另有参考文献。
 

@@ -238,4 +238,4 @@ main : IO ()
 
 ---
 
-[← 第 16 章　编译模式匹配](ch16-pattern-compilation.md) · [中文目录](../README.md) · [进入第三部分 · 第 18 章（英文） →](https://sdiehl.github.io/write-you-a-haskell/ch18-anf.html)
+[← 第 16 章　编译模式匹配](ch16-pattern-compilation.md) · [中文目录](../README.md) · [进入第三部分 · 第 18 章　A-正规形与汇合点 →](../part-3/ch18-anf.md)
