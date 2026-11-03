@@ -116,7 +116,7 @@ just pdf
 
 ## 全书路线图
 
-第 2～6 章各做一门独立的小语言。从第 7 章到第 24 章，我们才是在同一个 Fun 编译器上逐步加功能。下面每一行写的都是读完那章能做出什么。本部分的链接打开中文译文，后续章节的链接打开英文原书。
+第 2～6 章各做一门独立的小语言。从第 7 章到第 24 章，我们才是在同一个 Fun 编译器上逐步加功能。下面每一行写的都是读完那章能做出什么。第一、二部分的章节链接打开中文译文，第三部分的链接打开英文原书。
 
 ### 第一部分　基础
 
@@ -133,17 +133,17 @@ just pdf
 
 | 章 | 主题 | 动手实现 |
 | ---: | --- | --- |
-| 7 | [设计 Fun](https://sdiehl.github.io/write-you-a-haskell/ch07-fun.html) | 做出第一个 Fun 编译器，记录源码区间、给出错误诊断、管理编译阶段，并提供 Core 中间语言和命令行。 |
-| 8 | [缩进布局和扩展语法](https://sdiehl.github.io/write-you-a-haskell/ch08-layout.html) | 按缩进划分代码块，在格式化时保留注释，支持类型签名、运算符优先级与结合性，以及只给运算符一个操作数的写法（section）。 |
-| 9 | [名称解析](https://sdiehl.github.io/write-you-a-haskell/ch09-renamer.html) | 为绑定分配唯一名称，理清词法作用域，把依赖分组并处理相互递归。 |
-| 10 | [带类型的 Core 与 Core Lint](https://sdiehl.github.io/write-you-a-haskell/ch10-typed-core.html) | 把程序转成显式带类型的 System F，再独立检查一遍，揪出编译器自己的错误。 |
-| 11 | [数据类型与模式匹配](https://sdiehl.github.io/write-you-a-haskell/ch11-datatypes.html) | 支持代数数据类型、列表、元组、嵌套模式、函数的多条定义方程和守卫。 |
-| 12 | [记录](https://sdiehl.github.io/write-you-a-haskell/ch12-records.html) | 按类型名称区分记录，支持构造、更新、模式匹配，并解析用点号访问的字段。 |
-| 13 | [种类与类型构造器](https://sdiehl.github.io/write-you-a-haskell/ch13-kinds.html) | 支持高阶类型构造器，推断种类（kind），检查类型别名。 |
-| 14 | [类型类](https://sdiehl.github.io/write-you-a-haskell/ch14-type-classes.html) | 处理约束、实例、超类、默认规则、字典传递和 `Double`。 |
-| 15 | [Monad、do 记法与 IO](https://sdiehl.github.io/write-you-a-haskell/ch15-io.html) | 实现抽象高阶类型构造器的控制类、`do` 记法和隐藏内部表示的 `IO`，运行带副作用的程序。 |
-| 16 | [编译模式匹配](https://sdiehl.github.io/write-you-a-haskell/ch16-pattern-compilation.html) | 把模式编译成决策树和汇合点，报告遗漏或多余的分支。 |
-| 17 | [Prelude 与自动派生](https://sdiehl.github.io/write-you-a-haskell/ch17-prelude.html) | 用 Fun 自己写好 Prelude，并自动生成 `Eq`、`Ord` 和 `Show` 实例。 |
+| 7 | [设计 Fun](../part-2/ch07-fun.md) | 做出第一个 Fun 编译器，记录源码区间、给出错误诊断、管理编译阶段，并提供 Core 中间语言和命令行。 |
+| 8 | [缩进布局和扩展语法](../part-2/ch08-layout.md) | 按缩进划分代码块，在格式化时保留注释，支持类型签名、运算符优先级与结合性，以及只给运算符一个操作数的写法（section）。 |
+| 9 | [名称解析](../part-2/ch09-renamer.md) | 为绑定分配唯一名称，理清词法作用域，把依赖分组并处理相互递归。 |
+| 10 | [带类型的 Core 与 Core Lint](../part-2/ch10-typed-core.md) | 把程序转成显式带类型的 System F，再独立检查一遍，揪出编译器自己的错误。 |
+| 11 | [数据类型与模式匹配](../part-2/ch11-datatypes.md) | 支持代数数据类型、列表、元组、嵌套模式、函数的多条定义方程和守卫。 |
+| 12 | [记录](../part-2/ch12-records.md) | 按类型名称区分记录，支持构造、更新、模式匹配，并解析用点号访问的字段。 |
+| 13 | [种类与类型构造器](../part-2/ch13-kinds.md) | 支持高阶类型构造器，推断种类（kind），检查类型别名。 |
+| 14 | [类型类](../part-2/ch14-type-classes.md) | 处理约束、实例、超类、默认规则、字典传递和 `Double`。 |
+| 15 | [Monad、do 记法与 IO](../part-2/ch15-io.md) | 实现抽象高阶类型构造器的控制类、`do` 记法和隐藏内部表示的 `IO`，运行带副作用的程序。 |
+| 16 | [编译模式匹配](../part-2/ch16-pattern-compilation.md) | 把模式编译成决策树和汇合点，报告遗漏或多余的分支。 |
+| 17 | [Prelude 与自动派生](../part-2/ch17-prelude.md) | 用 Fun 自己写好 Prelude，并自动生成 `Eq`、`Ord` 和 `Show` 实例。 |
 
 ### 第三部分　后端
 

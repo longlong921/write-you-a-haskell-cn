@@ -433,4 +433,4 @@ Damas 和 Milner 给出了主类型方案的理论结果[^damas1982]。Kiselyov 
 
 ---
 
-[← 第 5 章　求值](ch05-evaluation.md) · [中文目录](../README.md)
+[← 第 5 章　求值](ch05-evaluation.md) · [中文目录](../README.md) · [第 7 章　设计 Fun →](../part-2/ch07-fun.md)
