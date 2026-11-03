@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="400" viewBox="0 0 740 400">
+<title>Fun 编译流程及各阶段的解释器</title>
+<defs><marker id="a" markerWidth="7" markerHeight="7" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#426577"/></marker></defs>
+<rect width="740" height="400" fill="#f8fafb" rx="8"/>
+<g font-family="sans-serif" font-size="15" text-anchor="middle" fill="#203946">
+<text x="370" y="30" font-size="13">Fun 编译器的实现路线 · 第 7～23 章</text>
+<g fill="white" stroke="#b8c9d1"><rect x="25" y="55" width="200" height="65" rx="4"/><rect x="270" y="55" width="200" height="65" rx="4"/><rect x="515" y="55" width="200" height="65" rx="4"/><rect x="515" y="170" width="200" height="65" rx="4"/><rect x="270" y="170" width="200" height="65" rx="4"/><rect x="25" y="170" width="200" height="65" rx="4"/><rect x="25" y="285" width="200" height="65" rx="4"/><rect x="270" y="285" width="200" height="65" rx="4"/><rect x="515" y="285" width="200" height="65" rx="4"/></g>
+<text x="125" y="81">源码 → 词元</text><text x="125" y="103" font-size="12">logos · 点号 · 注释空白 · 缩进</text>
+<text x="370" y="81">表层抽象语法树</text><text x="370" y="103" font-size="12">LALRPOP · 运算符分组 · 名称解析</text>
+<text x="615" y="81">语法树 → 带类型的语法树</text><text x="615" y="103" font-size="12">去语法糖 · 种类 · 类型检查</text>
+<text x="615" y="196">System F 核心语言</text><text x="615" y="218" font-size="12">类型显式化 · 模式匹配 · 检查</text>
+<text x="370" y="196">ANF</text><text x="370" y="218" font-size="12">类型擦除 · 规范化 · 简化</text>
+<text x="125" y="196">扁平中间表示（Flat IR）</text><text x="125" y="218" font-size="12">闭包转换</text>
+<text x="125" y="311">LLVM</text><text x="125" y="333" font-size="12">inkwell · 验证 · 优化</text>
+<text x="370" y="311">本机可执行文件</text><text x="370" y="333" font-size="12">目标文件 · cc · Rust 运行时 · GC</text>
+<text x="615" y="311">核对语义的参考实现</text><text x="615" y="333" font-size="12">Core · ANF · Flat · JIT</text>
+</g><g stroke="#426577" fill="none" stroke-width="1.5" marker-end="url(#a)"><path d="M225 87H263"/><path d="M470 87H508"/><path d="M615 120V163"/><path d="M515 202H477"/><path d="M270 202H232"/><path d="M125 235V278"/><path d="M225 317H263"/></g>
+<text x="370" y="383" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#426577">对照各引擎的标准输出字节、标准错误首行和退出状态。</text>
+</svg>
