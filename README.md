@@ -1,6 +1,6 @@
 # 手把手写一个 Haskell 风格的编译器
 
-**《Write You a Haskell》中文译本 · 第一部分「基础」、第二部分「前端」与第三部分「后端」**
+**《Write You a Haskell》中文译本 · 第一部分「基础」、第二部分「前端」、第三部分「后端」及附录**
 
 输入 `1 + 2 * 3`，计算机凭什么知道先算乘法？写下 `\x -> x`，它又凭什么知道这个函数可以接收整数，也可以接收布尔值？Stephen Diehl 从一个计算器讲起，用六章带你亲手做出能回答这些问题的解析器、解释器和类型推断器。
 
@@ -50,6 +50,20 @@
 | 24 | [精确垃圾回收（选读）](part-3/ch24-garbage-collection.md) | 回收器把列表搬到了新地址，寄存器和闭包里留下的旧地址该怎么办？ |
 | 25 | [接下来可以做什么](part-3/ch25-future-work.md) | 想做模块、惰性求值或源码调试，该从现有编译器的哪一层开始？ |
 
+## 附录
+
+写 Fun 程序时，可以从 A 查写法、从 B 查类型规则、从 E 按报错编号查问题。读编译器源码时，C 和 D 可以对照使用：先看一个值在中间表示里长什么样，再看它跨过函数调用边界时怎样装进一个机器字。
+
+| 附录 | 中文译文 | 带着这个问题读 |
+| --- | --- | --- |
+| A | [表层语法](appendices/appendix-a-syntax.md) | 为什么 `f.g` 和 `f . g` 读起来只差两个空格，意思却完全不同？ |
+| B | [类型规则](appendices/appendix-b-typing.md) | 同一个 `id` 什么时候可以既用于整数，又用于布尔值？公式里的上下两行怎么读？ |
+| C | [中间表示](appendices/appendix-c-ir.md) | 从 Core 到 ANF 再到 Flat，一次调用的求值顺序、目标函数和闭包环境分别在哪一层确定？ |
+| D | [运行时 ABI](appendices/appendix-d-runtime.md) | 为什么 `False`、`[]` 和 `Nothing` 都能编码成机器字 `1`？ |
+| E | [诊断代码速查](appendices/appendix-e-diagnostics.md) | 遇到 `E0245`，给字段名还是给取字段的那个值补类型标注？ |
+
+原书末尾的[参考文献](appendices/bibliography.md)列出 23 部著作、论文、报告与提案，保留原题、中文释义和原文链接，方便按题名检索。
+
 ## 跟着例子动手
 
 在 GitHub 里直接点上面的章节即可阅读。正文中的 Rust 片段已经展开，终端示例里的 `$` 是提示符。要实际运行程序，请按第 1 章准备环境，在**原书代码仓库**里执行命令。下面固定到本次翻译对应的版本，便于你对照书里的命令、输出和行文。
@@ -81,6 +95,6 @@ cargo run -q -- dump --pass=anf tests/programs/anf/case-continuation.fun --no-si
 
 ## 原作与许可
 
-原作 *Write You a Haskell* 由 Stephen Diehl 撰写，版权归原作者所有（© 2014–2026）。本仓库翻译了 Part I「基础」、Part II「前端」和 Part III「后端」（第 1～25 章），并将编译流程图的标注译成中文。为便于边读边试，译文补充了个别例子的中间步骤，代码片段和终端输出取自对应的上游版本。[英文在线版](https://sdiehl.github.io/write-you-a-haskell/) · [翻译所据源码](https://github.com/sdiehl/write-you-a-haskell/tree/51c70f804173c9d013187c543a353686b413ad50)
+原作 *Write You a Haskell* 由 Stephen Diehl 撰写，版权归原作者所有（© 2014–2026）。本仓库翻译了 Part I「基础」、Part II「前端」和 Part III「后端」（第 1～25 章），以及附录 A～E 和参考文献，并将编译流程图的标注译成中文。为便于边读边试，译文补充了个别例子的中间步骤，代码片段和终端输出取自对应的上游版本。[英文在线版](https://sdiehl.github.io/write-you-a-haskell/) · [翻译所据源码](https://github.com/sdiehl/write-you-a-haskell/tree/51c70f804173c9d013187c543a353686b413ad50)
 
 原书正文、原图及其中文翻译按 CC BY-SA 4.0（署名—相同方式共享）发布。代码示例和编译器源码沿用 MIT 许可证。[正文与图示的授权声明](LICENSE-PROSE) · [CC BY-SA 4.0 条款](https://creativecommons.org/licenses/by-sa/4.0/) · [代码许可证](LICENSE)

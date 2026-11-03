@@ -60,7 +60,7 @@ Fun 目前的记录有自己的类型名，字段也固定。如果我只想写�
 | 特化 | 擦除前保留的类型证据，以及函数调用约定 |
 | 源码调试 | 源码区间怎样一路传到 Flat，再交给 LLVM 生成代码 |
 
-查某种中间表示的细节时，可以翻[附录 C · 中间表示（英文）](https://sdiehl.github.io/write-you-a-haskell/appendix-c-ir.html)。想确认编译器和运行时之间怎么传值、怎么调用，可以翻[附录 D · 运行时 ABI（英文）](https://sdiehl.github.io/write-you-a-haskell/appendix-d-runtime.html)。
+查某种中间表示的细节时，可以翻[附录 C · 中间表示](../appendices/appendix-c-ir.md)。想确认编译器和运行时之间怎么传值、怎么调用，可以翻[附录 D · 运行时 ABI](../appendices/appendix-d-runtime.md)。
 
 恭喜你走到了这里！现在，把一行源码变成能在机器上跑的程序，中间要经过哪些步骤，你已经亲自走过了一遍。希望当初看起来高深莫测的某个部件，到这里已经变成了「给我一点时间，我也能坐下来把它写出来」。
 
@@ -72,4 +72,4 @@ Fun 目前的记录有自己的类型名，字段也固定。如果我只想写�
 
 ---
 
-[← 第 24 章　精确垃圾回收（选读）](ch24-garbage-collection.md) · [中文目录](../README.md) · [附录 A · 表层语法（英文） →](https://sdiehl.github.io/write-you-a-haskell/appendix-a-syntax.html)
+[← 第 24 章　精确垃圾回收（选读）](ch24-garbage-collection.md) · [中文目录](../README.md) · [附录 A · 表层语法 →](../appendices/appendix-a-syntax.md)
